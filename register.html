@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="registerText">Register</h2>
+        <form action="register.php" method="post" id="registerForm">
+            <input type="text" name="username" placeholder="Username (FirstName.SurName)" required>
+            <div class="usernameRequirements">
+            <li>Must be in the format Firstname.LastName
+            <li>Both FirstName and LastName should start with capital letters
+            </div>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <div class="usernameRequirements">
+                <li>Must be at least 8 characters long
+                <li>Must contain at least one letter, one number, and one symbol
+                </div>
+            <input type="submit" value="Register" class="registerButton">
+        </form>
+        <div class="registerHere">
+          Already have an account? <a href="http://localhost/websiteexample/index.html"> Login here </a>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>

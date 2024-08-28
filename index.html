@@ -4,33 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register/Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h2>Register</h2>
-        <form action="register.php" method="post" id="registerForm">
-            <input type="text" name="username" placeholder="Username (FirstName.SurName)" required>
-            <input type="password" name="password" id="password" placeholder="Password" required>
-            <div id="password-requirements">
-                <p>Password must contain:</p>
-                <ul>
-                    <li id="length">At least 8 characters</li>
-                    <li id="uppercase">At least one uppercase letter</li>
-                    <li id="lowercase">At least one lowercase letter</li>
-                    <li id="number">At least one number</li>
-                    <li id="special">At least one special character</li>
-                </ul>
-            </div>
-            <input type="submit" value="Register">
-        </form>
-
-        <h2>Login</h2>
-        <form action="login.php" method="post">
-            <input type="text" name="username" placeholder="Username" required>
+        <h2 class="loginText">Login</h2>
+        <form action="login.php" method="post" class="loginForm">
+            <input type="text" name="username" placeholder="Username" required class="disabled:opacity-100"> <br>
             <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
+            <br>
+            <input type="submit" value="Login" class="loginButton">
         </form>
+        <div class="registerHere">
+        Dont have an account yet? <a href="http://localhost/websiteexample/register.html"> Register here </a>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
